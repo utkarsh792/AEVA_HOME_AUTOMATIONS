@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AEVA HOME AUTOMATIONS</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_pass">Password</string>
+    <string name="aeva">AEVA</string>
+    <string name="ha">HOME AUTOMATIONS</string>
+</resources>

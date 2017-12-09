@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@mipmap/abc"
+    tools:context="aevahomeautomations.aevahomeautomations.MainActivity">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BBFFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/action_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+
+            android:src="@mipmap/aeva_logo"
+
+            />
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toEndOf="@+id/action_image"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:text="@string/aeva"
+            android:textColor="#459699"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/action_image"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="10dp"
+            android:text="@string/ha"
+            android:textColor="#459699"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_below="@+id/RL"
+        >
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+
+        android:background="@drawable/shape"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:hintTextAppearance="@style/abcd"
+            android:textColorHint="@color/gray"
+            >
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:singleLine="true"
+                android:hint="@string/hint_email"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lemail"
+            app:hintTextAppearance="@style/abcd"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/gray"
+
+            >
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+
+                android:hint="@string/hint_pass"
+
+                android:singleLine="true"
+
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RL1"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+
+            android:onClick="loggedin"
+            android:background="@drawable/sample"
+
+            android:text="LOG-IN"
+            android:textColor="#FFFFFF"
+
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
